@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Billion Days</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="shortcut icon"
+        href="data:image/jpeg;base64,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"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- alert cdn link  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+
+
+
+    <section class="main_header">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="headPara">Big Billion Days</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 col-3">
+                    <img src="./USER DEMO IMAGES/logohaibhai.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-2 col-9">
+                    <p class="headPara2">Spin The Lucky Wheel!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="whatsapp-share">
+
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center mt-2" style="font-weight: 600;">Congratulations!</h3>
+            </div>
+
+            <div class="row">
+                <div class="win-img">
+                    <img src="./whatsaap-img.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="adv-content">
+                    <p class="text-center">Your have won <span style="font-weight: bold;">OPPO F17 Pro (Matte Black, 8GB RAM, 128GB Storage)</span> . We've only 13 OPPO F17 Pro left for this week. Follow the instructions below in order to claim your OPPO F17 Pro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+
+
+
+    <section class="last-step">
+        <div class="container">
+            
+            
+            <div class="last-box">
+                <p class="text-danger">Congratulations! The last step:</p>
+                <p>You have to complete this final step!</p>
+                <p>1. You have to install the application below and once installed you have to open it for 30 seconds.</p>
+                <p>(Remember, this step is very important)</p>
+                <p>After completing the above actions, please wait for admin to check it, the review will be completed within 24 hours.</p>
+            </div>
+        
+        
+        </div>
+    </section>
+
+
+
+
+
+
+
+<div class="d-grid gap-2 col-3 mx-auto">
+    <a class="btn btn-success" href="https://play.google.com/store/apps/details?id=com.qaale.funweb" target="_abhishek" type="button">Download App</a>
+  </div>
+
+
+<br>
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>

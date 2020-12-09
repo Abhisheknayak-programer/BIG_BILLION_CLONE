@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_header{
+    height: 4.5rem;
+    width: 100%;
+    background:#4267B2;
+}
+
+.headPara,.headPara2{
+    color: white;
+    font-size: 20px;
+}
+
+.spin-wheel-holder{
+    height: 50vh;
+    width: 100%;
+    background:#f7f7f7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    transition: all 4s ease;
+}
+
+
+.spin-wheel-holder .mainbox{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: url("/ring.png") center center/cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 8px solid grey;
+    border-radius:50%;
+}
+
+.spin-wheel-holder .mainbox.animate:after{
+    animation: animate 0.7s ease infinite;
+}
+
+
+@keyframes animate{
+    50%{
+        top: 40px;
+        bottom: 0px;
+    }
+}
+
+.spin-wheel-holder .mainbox:after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #fff;
+    right: 47%;
+    top: 35%;
+    z-index: 33;
+    transform: translateY(-50%);
+}
+
+.spin-wheel-holder .mainbox .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #ff5722;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none !important;
+}
+
+
+.spin:active{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.reviews-section .like-comment{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+.reviews-section .like-comment i{
+    font-size: 23px;
+    margin-left: 10px;
+    padding: 0 10px;
+}
+
+.review-like-comment{
+    margin-top: -10px;
+    color: rgb(70, 69, 69);
+}
+
+.totallikes{
+    height: 3.5vh;
+    width: 100%;
+    background:#eeeff4;
+    line-height: 3.5vh;
+    color: #3c5a96;
+    font-size:13px;
+}
+.morecomments{
+    height: 3.5vh;
+    width: 100%;
+    background:#eeeff4;
+    line-height: 3.5vh;
+    color: #3c5a96;
+    font-size:13px;
+}
+
+.custom-cards{
+    background:#eeeff4;
+    height: 10.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.custom-cards img{
+    width: 30%;
+    height: 100%;
+}
+
+.custom-cards p{
+    position: relative;
+    left: -150px;
+    font-size: 10px;
+}
+.custom-cards span{
+    color: #3c5a96;
+
+}
+
+
+
+
+/*  Sharing Css Starts */
+.win-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-img img{
+    height: 30vh;
+    width: 20%;
+}
+
+
+
+.adv-content p{
+    width: 50%;
+    margin: auto;
+}
+
+
+.inner-container{
+    height: 30vh;
+    width: 50% !important;
+    margin: auto;
+    border-radius: 10px;
+    background: #f2f2f2;
+}
+
+.inner-container p{
+    color: #1b316c;
+}
+
+.whatsaapbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-container .btn-whatsaap,.inner-container .btn-whatsaap2{
+    background-color: #58BE41;
+    color: white;
+    outline: none;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+#continue{
+    display: none;
+}
+
+
+.inner-container .btn-whatsaap2{
+    background-color: #2323df;
+}
+
+.last-step{
+    height: 38vh;
+}
+
+
+.last-box{
+    width: 60%;
+    padding: 10px 20px;
+    height: 35vh;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #f2f2f2;
+    /* background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%); */
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1600px){
+    .main_header .row img{
+        height: 70%;
+        width: 70%;
+        margin-top: -20px;
+    }
+    .main_header .headPara2{
+        margin-left: -50px;
+        margin-top: -10px;
+    }
+    .spin{
+        top: 40%;
+    }
+    .spin-wheel-holder .mainbox:after{
+        width: 25px;
+        height: 25px;
+        top: 37%;
+        right: 45%;
+    }
+    
+}
+
+
+@media (max-width:1000px){
+    .main_header .row img{
+        height: 70%;
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .main_header .headPara2{
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    .custom-cards p{
+        left: -30px;
+    }
+    
+    .custom-cards img{
+    width: 50%;
+    height: 100%;
+    }
+    .review-box p:nth-child(2){
+        position: relative;
+        top: -10px;
+    }
+    .adv-content p{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:778px){
+    .spin{
+        top: 45%;
+    }
+    .spin-wheel-holder .mainbox:after{
+        width: 20px;
+        height: 20px;
+        right: 47%;
+        top: 35%;
+    }
+    .win-img img{
+        height: 30vh;
+        width: 50%;
+    }
+    .inner-container{
+        height: 40vh;
+        width: 100% !important;
+        margin: auto;
+        border-radius: 10px;
+        background: #f2f2f2;
+    }
+
+
+    .inner-container .btn-whatsaap,.inner-container .btn-whatsaap2{
+        font-size: 16px;
+    }
+
+    .last-step{
+        height: 65vh;
+        width: 100%;
+    }
+    .last-box{
+        height: 60vh;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.spin-wheel-holder .mainbox .box .box1 span{
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.spin-wheel-holder .mainbox .box .box1 .span1{
+    clip-path: polygon(0 90%, 0 2%, 104% 41%);
+    background-color: red;
+    top: 92px;
+    left: 0px;
+}
+.spin-wheel-holder .mainbox .box .box1 .span2{
+    clip-path: polygon(0 36%, 100% 10%, 100% 90%);
+    background-color: yellow;
+    top: 100px;
+    right: 0;
+}
+
+.spin-wheel-holder .mainbox .box .box1 .span3{
+    clip-path: polygon(49% 100%, 4% 0, 94% 0);
+    background-color: green;
+    top: 0px;
+    left: 90px;
+}
+
+.spin-wheel-holder .mainbox .box .box1 .span4{
+    clip-path: polygon(-6% 100%, 46% 0, 82% 100%);
+    background-color: blue;
+    bottom: 0;
+    left: 90px;
+}
+
+
+
+
+.spin-wheel-holder .mainbox .box .box1 .span5{
+    clip-path: polygon(0 93%, 33% 0, 114% 64%);
+    background-color: black;
+    top: 3px;
+    left: 174px;
+}
+
+
+
+.spin-wheel-holder .mainbox .box .box1 .span6{
+    clip-path: polygon(36% 108%, 140% 69%, 11% 0);
+    background-color: pink;
+    left: 152px;
+    bottom: 5px;
+}
+
+
+
+.spin-wheel-holder .mainbox .box .box1 .span7{
+    clip-path: polygon(100% 94%, 60% 0, 0 58%);
+    background-color: violet;
+    top: 0px;
+    left: -1px;
+}
+
+
+
+
+
+.spin-wheel-holder .mainbox .box .box1 .span8{
+    clip-path: polygon(49% 106%, 102% 0, 0 44%);
+    background-color: yellowgreen;
+    bottom: 5px;
+    left: -2px;
+}
+
+.spin-wheel-holder .mainbox .box .box1 span b {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: inset 0 3px 3px 0  #727171;
+} */
