@@ -59,7 +59,8 @@
     content: "";
     width: 20px;
     height: 20px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    clip-path: polygon(19% 93%, 63% 0, 74% 93%);
     background-color: #fff;
     right: 47%;
     top: 35%;
@@ -247,7 +248,10 @@
 }
 
 
-
+.fbnew{
+    text-decoration: none !important;
+    color: #000036;
+}
 
 
 
@@ -377,6 +381,7 @@
         height: 20px;
         right: 47%;
         top: 35%;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     }
     .win-img img{
         height: 30vh;
@@ -402,6 +407,15 @@
     .last-box{
         height: 60vh;
         width: 100%;
+    }
+    .spin-wheel-holder .mainbox{
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    .spin-wheel-holder .mainbox::after{
+        transform: translateY(-130%);
+        /* clip-path: polygon(19% 93%, 63% 0, 74% 93%); */
     }
 }
 
